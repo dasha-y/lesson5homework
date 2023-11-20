@@ -61,7 +61,7 @@ public class Main {
         int m = scanner.nextInt();
 
         int[][] snake = new int[n][m];
-        
+
 
 
         for (int k = 0; k < n*m; k++) {
@@ -76,7 +76,7 @@ public class Main {
         }
         for (int k = 0; k < snake.length; k++) {
             for (int l = 0; l < snake[k].length; l++) {
-                System.out.print(snake[k][l]+" ");
+                System.out.print(" ".repeat(3-Integer.toString(snake[k][l]).length())+snake[k][l]+" ");
             }
             System.out.println();
         }
